@@ -58,7 +58,6 @@
      print(canonCommonData)
 
   ## Uses HS dataset in MBESS 
-     library(MBESS)
      data(HS.data)
      attach(HS.data)
   ## Create canonical variable sets

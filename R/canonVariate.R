@@ -2,7 +2,6 @@ canonVariate <-
 function(A,B,nofns){
 
 ##Perform canonical correlation
-library(yacca)
 canon<-cca(A,B)
 
 ##Determine names of variables in set B

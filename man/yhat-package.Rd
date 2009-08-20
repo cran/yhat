@@ -4,9 +4,10 @@
 \docType{package}
 \title{Interpreting Regression Effects}
 \description{
-  This package provides methods for computing commonality 
-  coefficients for linear models and commonality coefficients 
-  for canonical correlation.
+  The purpose of this package is to provide methods for variance
+  partitioning for linear models and canonical correlation and methods
+  for interpreting regression effects using beta weights, standardized beta 
+  weights, structure coefficients, and adjusted effect sizes.
 }
 \details{
 \tabular{ll}{
@@ -17,6 +18,10 @@ Date: \tab 2009-07-02\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
+  The \code{regr} reports beta weights, standardized beta weights, 
+  structure coefficients, adjusted effect
+  sizes, and commonality coefficients.
+
   The \code{commonalityCoeffcients} function is based on Mood's 
   (1969) procedure for computing commonality analysis formulas 
   for any number of \emph{k} predictor variables. The function 
@@ -39,7 +44,7 @@ LazyLoad: \tab yes\cr
   that the two techniques provide identical results when one 
   canonical set contains only a single variable.
 }
-\author{Kim Nimon <kim.nimon@gmail.com>}
+\author{Kim Nimon <kim.nimon@gmail.com>, J. Kyle Roberts <kyler@smu.edu>}
 
 \references{
   Beaton, A. E. (1973) \emph{Commonality}. (ERIC Document Reproduction
@@ -58,6 +63,7 @@ LazyLoad: \tab yes\cr
 }
 \keyword{package}
 \seealso{
+    \code{\link{regr}}
     \code{\link{commonalityCoefficients}}
     \code{\link{canonCommonality}}
 }

@@ -60,7 +60,6 @@
   ## tests: general info, sentence comprehension, word
   ## classification, & word type 
   ## Uses HS dataset in MBESS 
-     library(MBESS)
      data(HS.data)
      attach(HS.data)
   ## Commonality Coefficient Analysis
