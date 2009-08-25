@@ -20,7 +20,7 @@ LazyLoad: \tab yes\cr
 }
   The \code{regr} reports beta weights, standardized beta weights, 
   structure coefficients, adjusted effect
-  sizes, and commonality coefficients.
+  sizes, and commonality coefficients. \cr
 
   The \code{commonalityCoeffcients} function is based on Mood's 
   (1969) procedure for computing commonality analysis formulas 

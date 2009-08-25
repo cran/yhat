@@ -1,8 +1,7 @@
-regr <-
-function(lm.out){
+regr<-function(lm.out){
 
 ifelse (length(lm.out$call)==3, 
-new.data<-eval(as.name(lm.out$call[[3]])), new.data<-model.frame(lm.out$call[[2]]))
+new.data<-eval(as.name(lm.out$call[[3]]),parent.frame()), new.data<-model.frame(lm.out$call[[2]]))
 
 
 #j<-ncol(new.data) 
@@ -34,7 +33,6 @@ CCdata=commonalityCoefficients(new.data,DV, IV, "F")
 es=effect.size(lm.out)
 
 #### Return
-return(list(LM_Output=summary(lm.out), Beta_Weights=beta.out, Structure_Coefficients=structure.coef, Commonality_Data=CCdata[1], Effect_Size=es, 
+return(list(LM_Output=summary(lm.out), Beta_Weights=beta.out, Structure_Coefficients=structure.coef, Commonality_Data=CCdata, Effect_Size=es, 
 Comment="The Effect Size recommendations are based on Yin and Fan (2001). Your dataset may take on a different covariance structure, thus making another effect size estimate more appropriate."))
 }
-

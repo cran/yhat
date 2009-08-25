@@ -1,8 +1,8 @@
 Package: yhat
 Type: Package
 Title: Interpreting Regression Effects
-Version: 1.0-1
-Date: 2009-08-20
+Version: 1.0-2
+Date: 2009-08-25
 Author: Kim Nimon <kim.nimon@gmail.com>, J. Kyle Roberts
         <kyler@smu.edu>
 Maintainer: Kim Nimon <kim.nimon@gmail.com>, J. Kyle Roberts
@@ -16,6 +16,6 @@ Description: The purpose of this package is to provide methods for
 License: GPL (>= 2)
 URL: http://www.r-project.org
 LazyLoad: yes
-Packaged: 2009-08-20 17:07:35 UTC; Michael
+Packaged: 2009-08-25 18:13:51 UTC; Michael
 Repository: CRAN
-Date/Publication: 2009-08-20 17:55:57
+Date/Publication: 2009-08-26 12:39:30
