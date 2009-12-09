@@ -35,6 +35,8 @@ function (dataMatrix, dv, ivlist, imat=FALSE){
 ivlist <- unlist(ivlist)
 nvar=length(ivlist)
 
+if (nvar<2) return ("Commonality analysis not conducted. Insufficient number of regressors.")
+
 ## Generate an ID for each independent variable to 2^(n-1). 
 ivID <- matrix(nrow=nvar,ncol=1)
 for (i in 0: nvar-1){
