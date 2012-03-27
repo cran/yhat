@@ -125,11 +125,11 @@ if (imat) print (commonalityMatrix)
 outputCommonalityMatrix <- matrix(nrow=numcc+1,ncol=2)
 totalRSquare <- sum(commonalityMatrix[,3])
 for (i in 1:numcc){
-	outputCommonalityMatrix[i,1]<-round(commonalityMatrix[commonalityMatrix[i,1],3], digit=4)
-	outputCommonalityMatrix[i,2]<-round((commonalityMatrix[commonalityMatrix[i,1],3]/totalRSquare)*100, digit=2)
+	outputCommonalityMatrix[i,1]<-round(commonalityMatrix[commonalityMatrix[i,1],3], digits=4)
+	outputCommonalityMatrix[i,2]<-round((commonalityMatrix[commonalityMatrix[i,1],3]/totalRSquare)*100, digits=2)
 }
-outputCommonalityMatrix[numcc+1,1]<-round(totalRSquare,digit=4)
-outputCommonalityMatrix[numcc+1,2]<-round(100,digit=4)
+outputCommonalityMatrix[numcc+1,1]<-round(totalRSquare,digits=4)
+outputCommonalityMatrix[numcc+1,2]<-round(100,digits=4)
 
 ## Use the bitmap matrix to generate row headings for the first output table.
 rowNames=NULL
@@ -167,7 +167,7 @@ if (imat) print (outputCommonalityMatrix)
 outputCCbyVar<-matrix(nrow=nvar,ncol=3)
 for (i in 1:nvar){
 	outputCCbyVar[i,1]=outputCommonalityMatrix[i,1]
-	outputCCbyVar[i,3]=round(sum(effectBitMap[i,]*commonalityMatrix[,3]), digit=4)
+	outputCCbyVar[i,3]=round(sum(effectBitMap[i,]*commonalityMatrix[,3]), digits=4)
 	outputCCbyVar[i,2]=outputCCbyVar[i,3]-outputCCbyVar[i,1]
 }
 dimnames(outputCCbyVar)<-list(ivlist,c("Unique", "Common", "Total"))

@@ -17,7 +17,7 @@ DV<-dimnames(attr(lm.out$terms,"factors"))[[1]][1]
 new.scale[,1]<-lm.out$model[,1]
 new.scale<-data.frame(new.scale)
 colnames(new.scale)<-c(DV,IV)
-beta.out<-coef(lm.out)[-1]*sapply(new.scale[IV],"sd")/sd(new.scale[DV])
+beta.out<-coef(lm.out)[-1]*sapply(new.scale[IV],"sd")/sapply(new.scale[DV],"sd")
 structure.coef<-cor(na.omit(fitted.values(lm.out)),new.scale[IV])
 
 #### Run Communality Coefficients
