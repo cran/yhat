@@ -1,12 +1,10 @@
 Package: yhat
 Type: Package
 Title: Interpreting Regression Effects
-Version: 1.0-4
-Date: 2012-03-27
-Author: Kim Nimon <kim.nimon@gmail.com>, J. Kyle Roberts
-        <kyler@smu.edu>
-Maintainer: Kim Nimon <kim.nimon@gmail.com>, J. Kyle Roberts
-        <kyler@smu.edu>
+Version: 1.0-5
+Date: 2012-07-26
+Author: Kim Nimon <kim.nimon@gmail.com> and J. Kyle Roberts.
+Maintainer: Kim Nimon <kim.nimon@gmail.com>
 Depends: R (>= 2.7.0), MBESS, yacca
 Description: The purpose of this package is to provide methods for
         variance partitioning for linear models and canonical
@@ -16,6 +14,6 @@ Description: The purpose of this package is to provide methods for
 License: GPL (>= 2)
 URL: http://www.r-project.org
 LazyLoad: yes
-Packaged: 2012-03-27 20:26:13 UTC; LTdept Sony Vaio
+Packaged: 2012-07-26 12:33:04 UTC; LTdept Sony Vaio
 Repository: CRAN
-Date/Publication: 2012-03-27 20:55:30
+Date/Publication: 2012-07-26 14:40:42
