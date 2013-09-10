@@ -1,5 +1,4 @@
 \name{effect.size}
-\Rdversion{1.1}
 \alias{effect.size}
 \title{Effect Size Computation for lm}
 \description{
@@ -25,7 +24,7 @@
  
   Yin, P., & Fan. X. (2001) Estimated R^2 shrinkage in multiple
   regression: A comparison of different analytical methods. 
-  \emph{The Journal of Experimental Education}, \bold{69}(2), 
+  \emph{The Journal of Experimental Education}, \emph{69}, 
   203-224.
 }
 \author{ J. Kyle Roberts <kyler@smu.edu>}
@@ -33,9 +32,11 @@
   \code{\link{regr}},\code{\link{yhat}}
 }
 \examples{
+     require ("MBESS")
      data(HS.data)
      attach(HS.data)
      lm.out<-lm(deduct~addition*arithmet)
      effect.size(lm.out)
+     detach(HS.data)
 }
 

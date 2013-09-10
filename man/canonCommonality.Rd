@@ -1,5 +1,4 @@
 \name{canonCommonality}
-\Rdversion{1.1}
 \alias{canonCommonality}
 \title{Commonality Coefficents for Canonical Correlation}
 \description{
@@ -42,6 +41,9 @@
   the resulting output ordering the output according to the 
   function's paramaeters.
 }
+\references{
+Nimon, K., Henson, R., & Gates, M. (2010). Revisiting interpretation of canonical correlation analysis: A tutorial and demonstration of canonical commonality analysis.  \emph{Multivariate Behavioral Research}, \emph{45},702-724.
+}
 \author{ Kim Nimon <kim.nimon@gmail.com>}
 
 \seealso{
@@ -55,9 +57,9 @@
      oec <- LifeCycleSavings[, -(2:3)]
   ## Perform Commonality Coefficient Analysis
      canonCommonData<-canonCommonality(pop,oec,1)
-     print(canonCommonData)
 
-  ## Uses HS dataset in MBESS 
+  ## Use HS dataset in MBESS 
+     require ("MBESS")
      data(HS.data)
      attach(HS.data)
   ## Create canonical variable sets
@@ -65,7 +67,7 @@
      MATH_FUND<-HS.data[,c("numeric","arithmet","addition")] 
   ## Perform Commonality Coefficient Analysis
      canonCommonData<-canonCommonality(MATH_FUND,MATH_REASON,1)
-     print(canonCommonData)       
+     detach(HS.data)      
 } % end example
 
 \keyword{multivariate} %end keyword

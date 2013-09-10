@@ -42,6 +42,9 @@
     variable.
     }
 }
+\references{
+Nimon, K., Lewis, M., Kane, R. & Haynes, R. M. (2008) An R  package to compute commonality coefficients in the multiple regression case: An introduction to the package and a practical example.\emph{Behavior Research Methods}, \emph{40}, 457-466.
+  }
 \author{ Kim Nimon <kim.nimon@gmail.com>}
 
 \seealso{
@@ -53,19 +56,18 @@
 \examples{
   ## Predict miles per gallon based on vehicle weight, type of 
   ## carborator, & number of engine cylinders
-     CCdata=commonalityCoefficients(mtcars,"mpg",list("wt","carb","cyl"))
-     print(CCdata)
+     commonalityCoefficients(mtcars,"mpg",list("wt","carb","cyl"))
 
   ## Predict paragraph comprehension based on four verbal
   ## tests: general info, sentence comprehension, word
   ## classification, & word type 
-  ## Uses HS dataset in MBESS 
+  ## Use HS dataset in MBESS 
+     require ("MBESS")
      data(HS.data)
-     attach(HS.data)
   ## Commonality Coefficient Analysis
-     CCdata=commonalityCoefficients(HS.data,"paragrap",list("general",
+     commonalityCoefficients(HS.data,"paragrap",list("general",
        "sentence","wordc","wordm"))
-     print(CCdata)
+
 }
 \keyword{models}
 \keyword{regression} % end keywords

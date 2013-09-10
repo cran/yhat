@@ -1,5 +1,4 @@
 \name{canonVariate}
-\Rdversion{1.1}
 \alias{canonVariate}
 \title{Canonical Commonality Analysis}
 \description{
@@ -35,8 +34,10 @@
   with its contribution to the total effect, while the second 
   table lists the unique and common effects for each regressor.
 }
-\author{ Kim Nimon <kim.nimon@gmail.com>
+\references{
+Nimon, K., Henson, R., & Gates, M. (2010). Revisiting interpretation of canonical correlation analysis: A tutorial and demonstration of canonical commonality analysis.  \emph{Multivariate Behavioral Research}, \emph{45},702-724.
 }
+\author{ Kim Nimon <kim.nimon@gmail.com>}
 \note{
   This function is internal to \code{\link{canonCommonality}}, 
   called during runtime and passed the appropriate parameters. 
