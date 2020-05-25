@@ -63,10 +63,10 @@ Nimon, K., Lewis, M., Kane, R. & Haynes, R. M. (2008) An R  package to compute c
   ## classification, & word type 
   ## Use HS dataset in MBESS 
      require ("MBESS")
-     data(HS.data)
+     data(HS)
   ## Commonality Coefficient Analysis
-     commonalityCoefficients(HS.data,"paragrap",list("general",
-       "sentence","wordc","wordm"))
+     commonalityCoefficients(HS,"t6_paragraph_comprehension",list("t5_general_information",
+       "t7_sentence","t8_word_classification","t9_word_meaning"))
 
 }
 \keyword{models}

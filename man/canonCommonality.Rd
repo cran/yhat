@@ -60,14 +60,14 @@ Nimon, K., Henson, R., & Gates, M. (2010). Revisiting interpretation of canonica
 
   ## Use HS dataset in MBESS 
      require ("MBESS")
-     data(HS.data)
-     attach(HS.data)
+     data(HS)
+     attach(HS)
   ## Create canonical variable sets
-     MATH_REASON<-HS.data[,c("deduct","problemr")]
-     MATH_FUND<-HS.data[,c("numeric","arithmet","addition")] 
+     MATH_REASON<-HS[,c("t20_deduction","t22_problem_reasoning")]
+     MATH_FUND<-HS[,c("t21_numerical_puzzles","t24_woody_mccall","t10_addition")] 
   ## Perform Commonality Coefficient Analysis
      canonCommonData<-canonCommonality(MATH_FUND,MATH_REASON,1)
-     detach(HS.data)      
+     detach(HS)      
 } % end example
 
 \keyword{multivariate} %end keyword

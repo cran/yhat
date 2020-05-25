@@ -1,10 +1,11 @@
 Package: yhat
 Type: Package
 Title: Interpreting Regression Effects
-Version: 2.0-0
-Date: 2013-09-10
-Author: Kim Nimon <kim.nimon@gmail.com>, Fred Oswald, and J. Kyle Roberts.
-Maintainer: Kim Nimon <kim.nimon@gmail.com>
+Version: 2.0-1
+Date: 2020-05-25
+Authors@R: c(person("Kim", "Nimon", email="kim.nimon@gmail.com", role=c("aut","cre")),
+             person("Fred","Oswald",role=c("aut")),
+             person("J. Klye", "Roberts", role=c("aut")))  
 Depends: R (>= 2.7.0)
 Imports: yacca, miscTools, plotrix, boot
 Suggests: MBESS
@@ -13,9 +14,12 @@ Description: The purpose of this package is to provide methods to interpret mult
   validity coefficients, product measures, relative weights, all-possible-subsets regression,
   dominance analysis, commonality analysis, and adjusted effect sizes.
 License: GPL (>= 2)
-URL: http://www.r-project.org
 LazyLoad: yes
-Packaged: 2013-09-15 20:48:29 UTC; LTdept Sony Vaio
 NeedsCompilation: no
+Packaged: 2020-05-25 17:36:29 UTC; kimnimon
+Author: Kim Nimon [aut, cre],
+  Fred Oswald [aut],
+  J. Klye Roberts [aut]
+Maintainer: Kim Nimon <kim.nimon@gmail.com>
 Repository: CRAN
-Date/Publication: 2013-09-16 00:43:36
+Date/Publication: 2020-05-25 18:10:02 UTC

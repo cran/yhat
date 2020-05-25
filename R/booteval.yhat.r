@@ -1,4 +1,4 @@
-booteval.yhat<-function(regrOut,boot.out,bty="bca",level=.95,prec=3){
+booteval.yhat<-function(regrOut,boot.out,bty="perc",level=.95,prec=3){
 
 if((bty != "perc") & (bty != "norm") & (bty != "basic") & (bty != "bca")) stop ("Only norm, basic, perc, and bca interval types are supported")
 
@@ -122,8 +122,9 @@ upperCIapsDiff<-round(upperCIapsDiff,digits=prec)
 combCIapsDiff<-combCI(lowerCIapsDiff,upperCIapsDiff,apsDiff,TRUE)
 
 p<-nrow(regrOut$APSRelatedMetrics)-ncol(combn(1:l,l-1))-2
-upperCIincDiff<-lowerCIincDiff<-incDiff<-matrix(nrow=p,ncol=nrow(combCIpmDiff))
+upperCIincDiff<-lowerCIincDiff<-incDiff<-combCIincDiff<-matrix(nrow=p,ncol=nrow(combCIpmDiff))
 
+if (p>0){
 indi<-inde+n*2
 for (i in 1:ncol(incDiff)){
   for (j in 1:nrow(incDiff)){
@@ -146,13 +147,15 @@ colnames(upperCIincDiff)<-colnames(lowerCIincDiff)<-colnames(incDiff)<-paste(col
                                                                              colnames(regrOut$APSRelatedMetrics)[pmc[2,]+3],sep="-")
 combCIincDiff<-combCI(lowerCIincDiff,upperCIincDiff,incDiff,TRUE)
 
+}
+
 tauds<-matrix(ncol=2,nrow=m)
 colnames(tauds)<-c("Mean","SD")
 rownames(tauds)<-colnames(regrOut$PredictorMetrics)
 
 for (i in 1:m){
-  tauds[i,"Mean"]<-mean(boot.out$t[,(ind+i)])
-  tauds[i,"SD"]<-sd(boot.out$t[,(ind+i)])
+  tauds[i,"Mean"]<-mean(boot.out$t[,(ind+i)],na.rm=TRUE)
+  tauds[i,"SD"]<-sd(boot.out$t[,(ind+i)],na.rm=TRUE)
 }
 
 return(list(combCIpm=combCIpm,lowerCIpm=lowerCIpm,upperCIpm=upperCIpm,

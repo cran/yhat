@@ -1,19 +1,24 @@
-canonCommonality <-
-function(A,B,nofns=1){
-################################################################# 
-##DESCRIPTION
-##Returns commonality data for requested functions
+canonCommonality<-function(A,B,nofns=1){
+    CCdataR <- vector("list", 2)
+    canon <- cca(A, B)
+    Blist <- dimnames(B)[[2]]
+    CCdata <- vector("list", nofns)
+    for (i in 1:nofns) {
+        CVA <- canon$canvarx[, i]
+        data <- cbind(B, CVA)
+        CCdata[[i]] <- commonalityCoefficients(data, "CVA", Blist, 
+            "F")
+    }
+    CCdataR[[1]] <- CCdata 
 
-##REQUIRED ARGUMENTS
-##A		Matrix containing variable set A
-##B		Matrix containing variable set B
- 
-##OPTIONAL ARGUMENTS
-##nofns	number of canonical functions to analyze - default to 1
-
-CCdata<-vector("list",2)
-CCdata[[1]]<-canonVariate(A,B,nofns)
-CCdata[[2]]<-canonVariate(B,A,nofns)
-return(CCdata)
+    Blist <- dimnames(A)[[2]]
+    CCdata <- vector("list", nofns)
+    for (i in 1:nofns) {
+        CVA <- canon$canvary[, i]
+        data <- cbind(A, CVA)
+        CCdata[[i]] <- commonalityCoefficients(data, "CVA", Blist, 
+            "F")
+    }
+    CCdataR[[2]] <- CCdata
+    return(CCdataR)
 }
-

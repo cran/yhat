@@ -28,6 +28,7 @@ The function returns relative weights for each predictor.
 \references{
 Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear regression: Beyond standardized regression coefficients. \emph{Organizational Research Methods}, \emph{16}, 
 650-674.
+Thomas, D. R., Zumbo, B. D., Kwan, E., & Schweitzer, L. (2014). On Johnson's (2000) relative weights method for assessing variable importance: A reanalysis. Multivariate Behavioral Research, 49, 329–338. 
 }
 \author{ Kim Nimon <kim.nimon@gmail.com>}
 \seealso{
@@ -43,10 +44,11 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
  
   ## Use HS dataset in MBESS 
      require("MBESS")
-     data(HS.data)
+     data(HS)
 
   ## Relative Weights
-     rwlOut<-rlw(HS.data,"paragrap",c("general","sentence","wordc"))
+     rwlOut<-rlw(HS,"t6_paragraph_comprehension",
+                     c("t5_general_information","t7_sentence","t8_word_classification"))
 
 }
 \keyword{models}

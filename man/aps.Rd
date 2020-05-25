@@ -61,10 +61,10 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
  
   ## Use HS dataset in MBESS 
      require ("MBESS")
-     data(HS.data)
+     data(HS)
   ## APS
-     apsOut<-aps(HS.data,"paragrap",list("general","sentence",
-                                         "wordc"))
+     apsOut<-aps(HS,"t6_paragraph_comprehension",list("t5_general_information","t7_sentence",
+                                         "t8_word_classification"))
 }
 \keyword{models}
 \keyword{regression} % end keywords

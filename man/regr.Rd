@@ -41,9 +41,9 @@ J. Kyle Roberts <kyler@smu.edu>, Kim Nimon <kim.nimon@gmail.com>
 }
 \examples{
      require("MBESS")
-     data(HS.data)
-     attach(HS.data)
-     lm.out<-lm(deduct~addition*arithmet)
+     data(HS)
+     attach(HS)
+     lm.out<-lm(t20_deduction~t10_addition*t24_woody_mccall)
      regr(lm.out)
-     detach(HS.data)
+     detach(HS)
 }

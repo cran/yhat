@@ -52,17 +52,18 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
  
   ## Use HS dataset in MBESS 
      require ("MBESS")
-     data(HS.data)
+     data(HS)
 
   ## Regression
-     lm.out<-lm(paragrap~general+sentence+wordc,data=HS.data)
+     lm.out<-lm(t6_paragraph_comprehension~
+                t5_general_information+t7_sentence+t8_word_classification,data=HS)
 
   ## Calculate regression metrics
      regrOut<-calc.yhat(lm.out)
 
   ## Bootstrap results
      require ("boot")
-     boot.out<-boot(HS.data,boot.yhat,100,lmOut=lm.out,regrout0=regrOut)
+     boot.out<-boot(HS,boot.yhat,100,lmOut=lm.out,regrout0=regrOut)
 
   ## Evaluate bootstrap results
      result<-booteval.yhat(regrOut,boot.out,bty="perc")
