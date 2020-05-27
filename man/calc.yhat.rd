@@ -25,7 +25,9 @@ and dominance analysis weights.
 \references{
 Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear regression: Beyond standardized regression coefficients. \emph{Organizational Research Methods}, \emph{16}, 
 650-674.
-Thomas, D. R., Zumbo, B. D., Kwan, E., & Schweitzer, L. (2014). On Johnson's (2000) relative weights method for assessing variable importance: A reanalysis. Multivariate Behavioral Research, 49(4), 329–338. 
+
+Thomas, D. R., Zumbo, B. D., Kwan, E., & Schweitzer, L. (2014). On Johnson's (2000) relative weights method for assessing variable importance: A reanalysis. \emph{Multivariate Behavioral Research}, \emph{16},
+49(4), 329-338. 
 }
 \author{
 Kim Nimon <kim.nimon@gmail.com>

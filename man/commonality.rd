@@ -43,7 +43,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
 
   ## All-possible-subsets regression
      apsOut=aps(HS,"t6_paragraph_comprehension",
-                list("t5_general_information", "t7_sentence","t8_word_classification"))
+                    list("t5_general_information", "t7_sentence","t8_word_classification"))
 
   ## Commonality analysis
      commonality(apsOut)

@@ -1,4 +1,4 @@
-ce09dd5f2c109beb406dfe63a91fa789 *DESCRIPTION
+7bacfc4457dd5c444152fc69d6a02eba *DESCRIPTION
 c8639645c94a023e59617a468056616c *NAMESPACE
 35619deaac17b9a219715e9cf81e39fb *R/aps.r
 bad518f5fe18d971660346909d927d71 *R/boot.yhat.r
@@ -22,12 +22,12 @@ d11006a4e7c58fef93a7de114936477b *R/rlw.r
 17e349575a5466228d7cfd24ade7c8fa *man/aps.Rd
 233e09c31901d425011834474bb85987 *man/boot.yhat.Rd
 5d2dde0da541f9ddddcf2ab5f0801a8c *man/booteval.yhat.rd
-96dd1b0fd31eea8f87e4e119cbe13a0e *man/calc.yhat.rd
+462b0c42e602efc82cac45811e56b6a2 *man/calc.yhat.rd
 266b40c1fb6c154544009b6a21a068c0 *man/canonCommonality.Rd
 6cc95d42bafdd17a54786b4c65edecac *man/canonVariate.Rd
 f17dbb336c2c1a7dffcb27652c2693f8 *man/ci.yhat.rd
 442968e042fc9fa1723cd0a8fe58d455 *man/combCI.rd
-72bd373b5b9632da54b5ec3f90835a3f *man/commonality.rd
+8908f1526eafd8c04530ef5e33df5db6 *man/commonality.rd
 b9f87393bb1881b375ebff4cbb06ba48 *man/commonalityCoefficients.Rd
 4e5b33281be2f1167d442e12a295c389 *man/dombin.rd
 b1890c8b9bb17900e0b0ace6aff1f8ab *man/dominance.rd
@@ -36,6 +36,6 @@ ec27215b55455d3b982c8ee1e0d3479f *man/genList.Rd
 540576d3be6e16e42cd77cc37f4f1c36 *man/odd.Rd
 9cbddba4775fc30dce012af0ea88b6b5 *man/plotCI.yhat.rd
 eb02819a4a554487f35251a434c83417 *man/regr.Rd
-9ce307120287dda943aa1c2069c2c641 *man/rlw.rd
+221fa99e57701337a6f5418030162d0e *man/rlw.rd
 198edde4ddf42763dce06a3171d9324a *man/setBits.Rd
-472affeb8bc05529af5c855c54b7951d *man/yhat-package.Rd
+4f19a2cbb151e20ce852568091a6837d *man/yhat-package.Rd

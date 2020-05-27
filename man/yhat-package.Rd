@@ -10,8 +10,8 @@
 \tabular{ll}{
 Package: \tab yhat\cr
 Type: \tab Package\cr
-Version: \tab 2.0-1\cr
-Date: \tab 2020-05-25\cr
+Version: \tab 2.0-2\cr
+Date: \tab 2020-05-27\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
