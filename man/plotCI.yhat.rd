@@ -51,7 +51,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
   ## sentence comprehension, & word classification 
  
   ## Use HS dataset in MBESS 
-     require ("MBESS")
+     if (require("MBESS")){
      data(HS)
 
   ## Regression
@@ -72,6 +72,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
   ## plotCI.yhat(regrOut$PredictorMetrics[-nrow(regrOut$PredictorMetrics),],
   ## result$upperCIpm,result$lowerCIpm, pid=which(colnames(regrOut$PredictorMetrics) 
   ## %in% c("Beta","rs","CD:0","CD:1","CD:2","GenDom","Pratt","RLW") == TRUE),nr=3,nc=3)
+     }
 }
 \keyword{models}
 \keyword{regression} % end keywords

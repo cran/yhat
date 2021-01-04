@@ -40,10 +40,11 @@ J. Kyle Roberts <kyler@smu.edu>, Kim Nimon <kim.nimon@gmail.com>
  \code{\link{effect.size}}
 }
 \examples{
-     require("MBESS")
+     if (require ("MBESS")){
      data(HS)
      attach(HS)
      lm.out<-lm(t20_deduction~t10_addition*t24_woody_mccall)
      regr(lm.out)
      detach(HS)
+     }
 }

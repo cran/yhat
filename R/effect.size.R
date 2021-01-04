@@ -10,17 +10,17 @@ function(lm.out){
 
 ####Compute Effect Sizes using Correction Formulas
 ####Wherry:
-  es[1,1]= (round(1 - (((n-1)/(n-p-1)) * (1 - rsquared)),digits=4))
+  es[1,1]= ((1 - (((n-1)/(n-p-1)) * (1 - rsquared))))
 ####Claudy3:
-  es[2,1]=(round(1 - (((n-4)*(1-rsquared))/(n-p-1)) * (1 + (2*(1-rsquared))/(n-p+1)),digits=4))
+  es[2,1]=((1 - (((n-4)*(1-rsquared))/(n-p-1)) * (1 + (2*(1-rsquared))/(n-p+1))))
 ####Smith:
-  es[3,1]=(round(1-((n/(n-p)) * (1-rsquared)),digits=4))
+  es[3,1]=((1-((n/(n-p)) * (1-rsquared))))
 ####Wherry2:
-  es[4,1]=(round(1- (((n-1)/(n-p)) * (1-rsquared)),digits=4))
+  es[4,1]=((1- (((n-1)/(n-p)) * (1-rsquared))))
 ####Olin & Pratt:
-  es[5,1]=(round(1-(((n-3)*(1-rsquared))/(n-p-1))*(1 + (2*(1-rsquared))/(n-p+1)),digits=4))
+  es[5,1]=((1-(((n-3)*(1-rsquared))/(n-p-1))*(1 + (2*(1-rsquared))/(n-p+1))))
 ####Pratt:
-  es[6,1]=(round(1-(((n-3)*(1-rsquared))/(n-p-1))*(1 + (2*(1-rsquared))/(n-p-2.3)),digits=4))
+  es[6,1]=((1-(((n-3)*(1-rsquared))/(n-p-1))*(1 + (2*(1-rsquared))/(n-p-2.3))))
 
 ####Identify recommended correction formula:
   es[,2]="No" 

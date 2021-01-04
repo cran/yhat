@@ -60,11 +60,12 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
   ## & word classification
  
   ## Use HS dataset in MBESS 
-     require ("MBESS")
+     if (require ("MBESS")){
      data(HS)
   ## APS
      apsOut<-aps(HS,"t6_paragraph_comprehension",list("t5_general_information","t7_sentence",
                                          "t8_word_classification"))
+     }
 }
 \keyword{models}
 \keyword{regression} % end keywords

@@ -27,7 +27,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
 650-674.
 
 Thomas, D. R., Zumbo, B. D., Kwan, E., & Schweitzer, L. (2014). On Johnson's (2000) relative weights method for assessing variable importance: A reanalysis. \emph{Multivariate Behavioral Research}, \emph{16},
-49(4), 329-338. 
+49(4), 329-338.
 }
 \author{
 Kim Nimon <kim.nimon@gmail.com>
@@ -38,7 +38,7 @@ Kim Nimon <kim.nimon@gmail.com>
   ## classification
   
   ## Use HS dataset in MBESS 
-     require ("MBESS")
+     if (require("MBESS")){
      data(HS)
   
   ## Regression
@@ -47,4 +47,5 @@ Kim Nimon <kim.nimon@gmail.com>
   
   ## Regression Indices
      regr.out<-calc.yhat(lm.out)
+     }
 }

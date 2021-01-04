@@ -70,7 +70,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
   ## sentence comprehension, & word classification
  
   ## Use HS dataset in MBESS 
-     require ("MBESS")
+     if (require ("MBESS")){
      data(HS)
 
   ## Regression
@@ -86,6 +86,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
 
   ## Evaluate bootstrap results
      result<-booteval.yhat(regrOut,boot.out,bty="perc")
+     }
 }
 \keyword{models}
 \keyword{regression} % end keywords

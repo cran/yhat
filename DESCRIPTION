@@ -1,8 +1,8 @@
 Package: yhat
 Type: Package
 Title: Interpreting Regression Effects
-Version: 2.0-2
-Date: 2020-05-27
+Version: 2.0-3
+Date: 2020-12-31
 Author: Kim Nimon <kim.nimon@gmail.com>, Fred Oswald, and J. Kyle Roberts.
 Maintainer: Kim Nimon <kim.nimon@gmail.com>
 Depends: R (>= 2.7.0)
@@ -15,6 +15,6 @@ Description: The purpose of this package is to provide methods to interpret mult
 License: GPL (>= 2)
 LazyData: true
 NeedsCompilation: no
-Packaged: 2020-05-27 17:26:23 UTC; kimnimon
+Packaged: 2020-12-31 18:33:56 UTC; kimnimon
 Repository: CRAN
-Date/Publication: 2020-05-27 22:00:02 UTC
+Date/Publication: 2021-01-04 21:20:02 UTC

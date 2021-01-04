@@ -38,7 +38,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
   ## classification
 
   ## Use HS dataset in MBESS 
-     require ("MBESS")
+     if (require ("MBESS")){
      data(HS)
 
   ## All-possible-subsets regression
@@ -47,6 +47,7 @@ Nimon, K., & Oswald, F. L. (2013). Understanding the results of multiple linear 
 
   ## Commonality analysis
      commonality(apsOut)
+     }
 }
 \keyword{models}
 \keyword{regression} % end keywords

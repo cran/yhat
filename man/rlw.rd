@@ -45,12 +45,13 @@ Thomas, D. R., Zumbo, B. D., Kwan, E., & Schweitzer, L. (2014). On Johnson's (20
   ## sentence comprehension, & word classification
  
   ## Use HS dataset in MBESS 
-     require("MBESS")
+     if (require ("MBESS")){
      data(HS)
 
   ## Relative Weights
      rwlOut<-rlw(HS,"t6_paragraph_comprehension",
                      c("t5_general_information","t7_sentence","t8_word_classification"))
+     }
 
 }
 \keyword{models}

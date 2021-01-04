@@ -59,7 +59,7 @@ Nimon, K., Henson, R., & Gates, M. (2010). Revisiting interpretation of canonica
      canonCommonData<-canonCommonality(pop,oec,1)
 
   ## Use HS dataset in MBESS 
-     require ("MBESS")
+     if (require("MBESS")){
      data(HS)
      attach(HS)
   ## Create canonical variable sets
@@ -68,6 +68,7 @@ Nimon, K., Henson, R., & Gates, M. (2010). Revisiting interpretation of canonica
   ## Perform Commonality Coefficient Analysis
      canonCommonData<-canonCommonality(MATH_FUND,MATH_REASON,1)
      detach(HS)      
+     }
 } % end example
 
 \keyword{multivariate} %end keyword

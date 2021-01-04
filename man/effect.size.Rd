@@ -32,11 +32,12 @@
   \code{\link{regr}},\code{\link{yhat}}
 }
 \examples{
-     require ("MBESS")
+     if (require("MBESS")){
      data(HS)
      attach(HS)
      lm.out<-lm(t20_deduction~t10_addition*t24_woody_mccall)
      effect.size(lm.out)
      detach(HS)
+     }
 }
 

@@ -62,11 +62,12 @@ Nimon, K., Lewis, M., Kane, R. & Haynes, R. M. (2008) An R  package to compute c
   ## tests: general info, sentence comprehension, word
   ## classification, & word type 
   ## Use HS dataset in MBESS 
-     require ("MBESS")
+     if (require ("MBESS")){
      data(HS)
   ## Commonality Coefficient Analysis
      commonalityCoefficients(HS,"t6_paragraph_comprehension",list("t5_general_information",
        "t7_sentence","t8_word_classification","t9_word_meaning"))
+     }
 
 }
 \keyword{models}
