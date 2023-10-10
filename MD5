@@ -1,4 +1,4 @@
-d0233a93d3b65ae0ef0b9facf6c1d713 *DESCRIPTION
+847f98f36ecebf72d38ff477b3942bb8 *DESCRIPTION
 c8639645c94a023e59617a468056616c *NAMESPACE
 35619deaac17b9a219715e9cf81e39fb *R/aps.r
 bad518f5fe18d971660346909d927d71 *R/boot.yhat.r
@@ -38,4 +38,4 @@ ec27215b55455d3b982c8ee1e0d3479f *man/genList.Rd
 a5af70c2f0a8d95ba499b718adab7186 *man/regr.Rd
 857b2f86e9f7443ba183ddddf8368609 *man/rlw.rd
 198edde4ddf42763dce06a3171d9324a *man/setBits.Rd
-4f19a2cbb151e20ce852568091a6837d *man/yhat-package.Rd
+4491953a4a6b42beedfaf109fb1c046b *man/yhat-package.Rd

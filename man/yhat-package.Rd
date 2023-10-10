@@ -6,17 +6,7 @@
 \description{
   The purpose of this package is to provide methods to interpret multiple linear regression and canonical correlation results including beta weights, structure coefficients, validity coefficients, product measures, relative weights, all-possible-subsets regression, dominance analysis, commonality analysis, and adjusted effect sizes.
 }
-\details{
-\tabular{ll}{
-Package: \tab yhat\cr
-Type: \tab Package\cr
-Version: \tab 2.0-2\cr
-Date: \tab 2020-05-27\cr
-License: \tab GPL (>= 2)\cr
-LazyLoad: \tab yes\cr
-}
- 
-}
+
 \author{Kim Nimon <kim.nimon@gmail.com>, Fred L. Oswald, J. Kyle Roberts}
 
 \references{
